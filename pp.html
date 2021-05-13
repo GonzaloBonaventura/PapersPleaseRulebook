@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rule Book</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="papersplease.css">
+	<link rel="preload" href="rulebook.js" as="script">
+	<link rel="preload" href="dias.js" as="script">
+<body id="base" onload="hide2();">
+	<header>
+		
+		<div id="datesel">
+			<a id="arrowl" class="arrow" onclick="minus();"></a>
+			<div id="date"></div>
+			<div id="segundo" class="number"></div>
+			<div id="primero" class="number"></div>
+			<a id="arrowr" class="arrow" onclick="plus();"></a>
+		</div>
+	</header>
+	<div id="cover">Loading...</div>
+	<div id="ball" class="draggable" onmousedown="shaders();">
+		<div id="rulebook" >
+			<a href="#" id="button1" onclick="pagetwo()"></a>
+			<a href="#" id="pointer1" class="point" onclick="pagetwo()"></a>
+			<a href="#" id="button2" onclick="pagethree()"></a>
+			<a href="#" id="pointer2" class="point" onclick="pagebooth()"></a>
+			<a href="#" id="button3" onclick="pagebooth()"></a>
+			<a href="#" id="pointer3" class="point" onclick="pagebooth()"></a>
+			<a href="#" id="button4"></a>
+			<a href="#" id="pointer4" class="point"></a>
+			<a href="#" id="button5"></a>
+			<a href="#" id="pointer5" class="point"></a>
+			<a id="pager1" href="#" class="movepage" style="top: 136px" onclick="pagetwo()"></a>
+			<a id="marcador1" class="marcador"></a>
+		</div>
+
+		<div id="rulebook2rules">
+			<a id="pagel1"href="#" class="movepagebk" onclick="pageone()"></a>
+			<a  id="rule1" class="rule" style="top:20px; left:44px;"></a>
+			<a  id="rule2" class="rule" style="top:34px; left:44px;"></a>
+			<a  id="rule3" class="rule0" style="top:48px; left:44px;"></a>
+			<a  id="rule4" class="rule0" style="top:62px; left:44px;"></a>
+			<a  id="rule5" class="rule0" style="top:76px; left:44px;"></a>
+			<a  id="rule6" class="rule0" style="top:-140px; left:286px;"></a>
+			<a  id="rule7" class="rule0" style="top:-130px; left:286px;"></a>
+			<a  id="rule8" class="rule0" style="top:-120px; left:286px;"></a>
+			<a  id="rule9" class="rule0" style="top:-110px; left:286px;"></a>
+			<a  id="rule10" class="rule0" style="top:-100px; left:286px;"></a>
+			<a id="pager2" href="#" class="movepage" style="top:-84px" onclick="pagethree()"></a>
+			<a id="marcador2" class="marcador" onclick="pageone()"></a>
+		</div>
+
+		<div id="rulebook3map">
+			<a id="pagel2" href="#" class="movepagebk" onclick="pagetwo()"></a>
+			<a href="#" id="marca" onclick="pageone()"></a>
+			<a href="#" id="obristan" onclick="pageeight()"></a>
+			<a href="#" id="antegria" onclick="pagefour()"></a>
+			<a href="#" id="republia" onclick="pagenine()"></a>
+			<a href="#" id="united" onclick="pageten()"></a>
+			<a href="#" id="federation" onclick="pageten()"></a>
+			<a href="#" id="impor" onclick="pagesix()"></a>
+			<a href="#" id="kolechia" onclick="pageseven()"></a>
+			<a href="#" id="arstotzka" onclick="pagefive()"></a>
+			<a id="pager3" href="#" class="movepage" style="top: 65px; bottom: 0px;" onclick="pagefour()"></a>
+		</div>
+
+		<div id="rulebook4antegria" class="region">
+			<a id="pagel3" href="#" class="movepagebk" onclick="pagethree()"></a>
+			<a id="antegriaN"></a>
+			<a id="antegriaS"></a>
+			<a id="antegriaP"></a>
+			<a id="antegriaC"></a>
+			<a id="issuing"></a>
+			<a id="pager4" href="#" class="movepage" style="top: -110px; bottom: 100px;" onclick="pagefive()"></a>
+			<a  id="marcador3" class="marcador" onclick="pageone()"></a>
+		</div>
+
+		<div id="rulebook5arstotzka">
+			<a id="pagel4" href="#" class="movepagebk" onclick="pagefour()"></a>
+			<a id="arstotzkaN"></a>
+			<a id="arstotzkaS"></a>
+			<a id="arstotzkaP"></a>
+			<a id="arstotzkaC"></a>
+			<a id="issuing"></a>
+			<a id="pager5" href="#" class="movepage" style="top: -110px; bottom: 100px;" onclick="pagesix()"></a>
+			<a id="marcador4" class="marcador" onclick="pageone()"></a>
+		</div>
+
+		<div id="rulebook6impor" class="region">
+			<a id="pagel5" href="#" class="movepagebk" onclick="pagefive()"></a>
+			<a id="imporN"></a>
+			<a id="imporS"></a>
+			<a id="imporP"></a>
+			<a id="imporC"></a>
+			<a id="issuing"></a>
+			<a id="pager6" href="#" class="movepage" style="top: -110px; bottom: 100px;" onclick="pageseven()"></a>
+			<a id="marcador5" class="marcador" onclick="pageone()"></a>
+		</div>
+
+		<div id="rulebook7kolechia" class="region">
+			<a id="pagel6" href="#" class="movepagebk" onclick="pagesix()"></a>
+			<a id="kolechiaN"></a>
+			<a id="kolechiaS"></a>
+			<a id="kolechiaP"></a>
+			<a id="kolechiaC"></a>
+			<a id="issuing"></a>
+			<a id="pager7" href="#" class="movepage" style="top: -110px; bottom: 100px;" onclick="pageeight()"></a>
+			<a id="marcador6" class="marcador" onclick="pageone()"></a>
+		</div>
+
+		<div id="rulebook8obristan" class="region">
+			<a id="pagel7" href="#" class="movepagebk" onclick="pageseven()"></a>
+			<a id="obristanN"></a>
+			<a id="obristanS"></a>
+			<a id="obristanP"></a>
+			<a id="obristanC"></a>
+			<a id="issuing"></a>
+			<a id="pager8" href="#" class="movepage" style="top: -110px; bottom: 100px;" onclick="pagenine()"></a>
+			<a id="marcador7" class="marcador" onclick="pageone()"></a>
+		</div>
+
+		<div id="rulebook9republia" class="region">
+			<a id="pagel8" href="#" class="movepagebk" onclick="pageeight()"></a>
+			<a id="republiaN"></a>
+			<a id="republiaS"></a>
+			<a id="republiaP"></a>
+			<a id="republiaC"></a>
+			<a id="issuing"></a>
+			<a id="pager9" href="#" class="movepage" style="top: -110px; bottom: 100px;" onclick="pageten()"></a>
+			<a id="marcador8" class="marcador" onclick="pageone()"></a>
+		</div>
+
+		<div id="rulebook10unitedfed" class="region">
+			<a id="pagel9" href="#" class="movepagebk" onclick="pagenine()"></a>
+			<a id="unitedfedN"></a>
+			<a id="unitedfedS"></a>
+			<a id="unitedfedP"></a>
+			<a id="unitedfedC"></a>
+			<a id="issuing"></a>
+			<a id="pager10" href="#" class="movepage" style="top: -110px; bottom: 100px;" onclick="pagebooth()"></a>
+			<a id="marcador9" class="marcador" onclick="pageone()"></a>
+		</div>
+
+		<div id="rulebook11booth">
+			<a id="pagel10" href="#" class="movepagebk" onclick="pageten()"></a>
+			<a id="pager11" href="#" class="movepage" style="top: 256px; bottom: 0px;" onclick="pagelast()"></a>
+			<a id="marcador10" class="marcador" onclick="pageone()"></a>
+		</div>
+
+
+		<div id="rulebook12last">
+			<a id="pagel11" href="#" class="movepagebk" onclick="pagebooth()"></a>
+			<a id="marcador11" class="marcador" onclick="pageone()"></a>
+		</div>
+
+		<div id="rulebook13docs">
+			<a id="pagel12" href="#" class="movepagebk" onclick="pagebooth()"></a>
+			<a id="pager12" href="#" class="movepage" style="top: 256px; bottom: 0px;" onclick="pageid()"></a>
+			<a id="marcador10" class="marcador" onclick="pageone()"></a>
+			<span id="doc1" onclick=""></span>
+			<span id="doc2" onclick=""></span>
+			<span id="doc3" onclick=""></span>
+			<span id="doc4" onclick=""></span>
+			<span id="doc5" onclick=""></span>
+			<span id="doc6" onclick=""></span>
+		</div>
+		
+		<div id="rulebook14id">
+			<a id="pagel13" href="#" class="movepagebk" onclick="pagedocs()"></a>
+			<a id="pager13" href="#" class="movepage" style="top: 256px; bottom: 0px;" onclick="pageentry()"></a>
+			<a id="marcador10" class="marcador" onclick="pageone()"></a>
+			<div id="distritos"></div>
+		</div>
+		<div id="rulebook15entry">
+			<a id="pagel13" href="#" class="movepagebk" onclick="pageid()"></a>
+			<a id="pager13" href="#" class="movepage" style="top: 256px; bottom: 0px;" onclick="pagelast()"></a>
+			<a id="marcador10" class="marcador" onclick="pageone()"></a>
+			<div id="sellos"></div>
+			<div id="must"></div>
+		</div>
+
+		<div id="shadow"></div>
+	</div>
+	<div id="chargenum">
+			<div style="background-image: url(ppimg/days/0.png);" class="number"></div>
+			<div style="background-image: url(ppimg/days/2.png);" class="number"></div>
+			<div style="background-image: url(ppimg/days/3.png);" class="number"></div>
+			<div style="background-image: url(ppimg/days/4.png);" class="number"></div>
+			<div style="background-image: url(ppimg/days/5.png);" class="number"></div>
+			<div style="background-image: url(ppimg/days/6.png);" class="number"></div>
+			<div style="background-image: url(ppimg/days/7.png);" class="number"></div>
+			<div style="background-image: url(ppimg/days/8.png);" class="number"></div>
+			<div style="background-image: url(ppimg/days/9.png);" class="number"></div>
+	</div>
+	<div id="chargerules">
+			<div style="background-image: url(ppimg/rules/rule3.png);" class="number"></div>
+			<div style="background-image: url(ppimg/rules/rule4.png);" class="number"></div>
+			<div style="background-image: url(ppimg/rules/rule5.png);" class="number"></div>
+			<div style="background-image: url(ppimg/rules/rule6.png);" class="number"></div>
+	</div>
+	<script  src="draggable.js"></script>
+	<script type="text/javascript" src="dias.js"></script>
+	<script type="text/javascript" src="rulebook.js"></script>
+	<script type="text/javascript" src="../instantclick"></script>
+</body>
+</html>

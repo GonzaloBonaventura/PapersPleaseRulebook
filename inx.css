@@ -1,0 +1,21 @@
+@font-face {
+  font-family: pixelplay;
+  src: url(pixelplay.woff);
+}
+.menuoption{
+	font-family: pixelplay;
+	color:#546754;
+	text-decoration:none;
+	border-bottom: dotted 2px #556855;
+	font-size: 30px;
+	margin-left: 40%;
+	margin-top: 40%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+.menuoption:active{
+	color: black;
+	background: #546754;
+	margin-left: 45%;
+	padding: 0%;
+}

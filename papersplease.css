@@ -1,0 +1,942 @@
+body{
+	background-image: url("ppimg/fondo.png");
+}
+#base {
+  content: url("ppimg/rulebook/rulesInner200.png") url("ppimg/rulebook/booth.png") url("ppimg/rulebook/region.png") url("ppimg/rulebook/regionZ.png") url("ppimg/rulebook/map.png") url("ppimg/rulebook/RulesInnerLast.png");
+  display: all;
+
+}
+#chargenum{
+	display: block;
+}
+#cover{
+	z-index: 999;
+	background: white;
+	cursor: progress;
+	display: block;
+	background-size: cover;
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	line-height: -100%;
+	opacity: 99%;
+}
+#datesel{
+	background-image: url("ppimg/days/model.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: all;
+	cursor: pointer;
+	width: 200px;
+	height: 40px;
+	position: relative;
+	top: 0px;
+	left: 1150px;
+}
+.arrow{
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	width: 20px;
+	height: 32px;
+	position: relative;
+}
+#arrowl{
+	background-image: url("ppimg/days/left.png");
+	top: 4px;
+	left: 10px;
+}
+#arrowr{
+	background-image: url("ppimg/days/right.png");
+	bottom: 86px;
+	left: 171px;
+}
+#arrowl:hover{
+	background-image: url("ppimg/days/lefthover.png");
+}
+#arrowr:hover{
+	background-image: url("ppimg/days/righthover.png");
+}
+#arrowl:active{
+	background-image: none;
+}
+#arrowr:active{
+	background-image: none;
+}
+#date{
+	background-image: url("ppimg/days/day.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	width: 28px;
+	height: 10px;
+	position: relative;
+	bottom: 17px;
+	left: 50px;
+}
+.number{
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	width: 12px;
+	height: 24px;
+	position: relative;
+}
+#primero{
+	background-image: url("url('ppimg/days/none.png')");
+	bottom: 57px;
+	left: 110px;
+}
+#segundo{
+	background-image: url("ppimg/days/1.png");
+	bottom: 33px;
+	left: 125px;
+}
+#ball{
+	cursor: pointer;
+	width: 492px;
+	height: 320px;
+}
+#shadow{
+	width: 482px;
+	height: 320px;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	position: relative;
+	bottom: 320px;
+	left: 4px;
+}
+#rulebook{
+	background-image: url("ppimg/rulebook/rule200.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inherit;
+	cursor: pointer;
+
+	width: 492px;
+	height: 320px;
+}
+.marcador{
+	background-image: url("ppimg/botones/marca.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	width: 20px;
+	height: 30px;
+}
+#marcador1{
+	top: -178px;
+	left: 438px;
+}
+#button1{
+	background-image: url("ppimg/botones/boton1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	width: 100px;
+	height: 22px;
+	position: relative;
+	top: 81px;
+	left: 294px;
+}
+.point{	
+	background-image: url("ppimg/botones/pointer.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	width: 8px;
+	height: 8px;
+	position: relative;
+}
+#pointer1{
+	top: 63px;
+	left: 274px;
+}
+#button2{
+	background-image: url("ppimg/botones/boton2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	width: 112px;
+	height: 22px;
+	position: relative;
+	top: 86px;
+	left: 294px;
+}
+#pointer2{
+	top: 68px;
+	left: 274px;
+}
+#button3{
+	background-image: url("ppimg/botones/boton3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	width: 96px;
+	height: 22px;
+	position: relative;
+	top: 90px;
+	left: 294px;
+}
+#pointer3{
+	top: 72px;
+	left: 274px;
+}
+#button4{
+	background-image: url("ppimg/botones/boton4.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	width: 98px;
+	height: 22px;
+	position: relative;
+	top: 94px;
+	left: 294px;
+}
+#pointer4{
+	top: 76px;
+	left: 274px;
+	background: rgb(228,230,189);
+}
+#button5{
+	background-image: url("ppimg/botones/boton5.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	width: 98px;
+	height: 22px;
+	position: relative;
+	top: 98px;
+	left: 294px;
+}
+#pointer5{
+	top: 80px;
+	left: 274px;
+	background: rgb(228,230,189);
+}
+.movepage{
+	background-image: url("ppimg/botones/page.png");
+	background-size: cover;
+	display: block;
+	width: 34px;
+	height: 30px;
+	position: relative;
+	top: 152px;
+	left: 438px;
+}
+#rulebook2rules{
+	background-image: url("ppimg/rulebook/rulesinner200.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	cursor: pointer;
+
+	width: 492px;
+	height: 320px;
+}
+#marcador2{
+	bottom: 398px;
+	left: 22px;
+}
+.movepagebk{
+	background-image: url("ppimg/botones/pageleft.png");
+	background-size: cover;
+	display: block;
+	width: 34px;
+	height: 30px;
+	position: relative;
+	top: 286px;
+	left: 20px;
+}
+.rule{
+	background-size: cover;
+	display: block;
+	width: 178px;
+	height: 34px;
+	position: relative;
+}
+.rule0{
+	background-image: url("ppimg/rules/rule0.png");
+	background-size: cover;
+	display: block;
+	width: 178px;
+	height: 34px;
+	position: relative;
+}
+#rule1{
+	background-image: url("ppimg/rules/rule1.png");
+}
+#rule2{
+	background-image: url("ppimg/rules/rule2.png");
+}
+#rule3{
+
+}
+#rule4{
+	
+}
+#rule5{
+	
+}
+#rule6{
+	
+}
+#rule7{
+	
+}
+#rule8{
+	
+}
+#rule9{
+	
+}
+#rule10{
+	
+}
+#rulebook3map{
+	background-image: url("ppimg/rulebook/map.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	cursor: pointer;
+
+	width: 492px;
+	height: 320px;
+}
+#marca{
+	display: block;
+	width: 19px;
+	height: 28px;
+	position: relative;
+	left: 23px;
+	bottom: 28px;
+}
+#obristan{
+	display: block;
+	width: 79px;
+	height: 20px;
+	position: relative;
+	left: 132px;
+	bottom: 43px;
+}
+#antegria{
+	display: block;
+	width: 79px;
+	height: 20px;
+	position: relative;
+	left: 72px;
+	top: 25px;
+}
+#republia{
+	display: block;
+	width: 75px;
+	height: 20px;
+	position: relative;
+	left: 108px;
+	top: 89px;
+}
+#united{
+	display: block;
+	width: 59px;
+	height: 20px;
+	position: relative;
+	left: 24px;
+	top: 110px;
+}
+#federation{
+	display: block;
+	width: 99px;
+	height: 20px;
+	position: relative;
+	left: 24px;
+	top: 110px;
+}
+#impor{
+	display: block;
+	width: 58px;
+	height: 21px;
+	position: relative;
+	left: 162px;
+	top: 102px;
+}
+#kolechia{
+	display: block;
+	width: 76px;
+	height: 21px;
+	position: relative;
+	left: 294px;
+	bottom: 141px;
+}
+#arstotzka{
+	display: block;
+	width: 93px;
+	height: 21px;
+	position: relative;
+	left: 369px;
+	bottom: 32px;
+}
+.region{
+	background-image: url("ppimg/rulebook/region.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	cursor: pointer;
+}
+
+#rulebook4antegria{
+	width: 492px;
+	height: 320px;
+}
+#marcador3{
+	bottom: 424px;
+	left: 22px;
+}
+#antegriaN{
+	background-image: url("ppimg/region/antegria_n.png");
+	background-size: cover;
+	display: block;
+	width: 136px;
+	height: 18px;
+	position: relative;
+	bottom: 6px;
+	left: 60px;
+}
+#antegriaS{
+	background-image: url("ppimg/region/antegria_s.png");
+	background-size: cover;
+	display: block;
+	width: 84px;
+	height: 172px;
+	position: relative;
+	top: 54px;
+	left: 84px;
+}
+#antegriaP{
+	background-image: url("ppimg/region/antegria_p.png");
+	background-size: cover;
+	display: block;
+	width: 60px;
+	height: 80px;
+	position: relative;
+	bottom: 172px;
+	left: 286px;
+}
+#antegriaC{
+	background-image: url("ppimg/region/antegria_c.png");
+	background-size: cover;
+	display: block;
+	width: 140px;
+	height: 52px;
+	position: relative;
+	bottom: 110px;
+	left: 286px;
+}
+#issuing{
+	background-image: url("ppimg/rulebook/RuleIssuingCity.png");
+	background-size: cover;
+	display: block;
+	width: 166px;
+	height: 44px;
+	position: relative;
+	bottom: 94px;
+	left: 286px;
+}
+
+
+#rulebook5arstotzka{
+	background-image: url("ppimg/rulebook/regionZ.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	cursor: pointer;
+
+	width: 492px;
+	height: 320px;
+}
+#marcador4{
+	bottom: 424px;
+	left: 22px;
+}
+#arstotzkaN{
+	background-image: url("ppimg/region/arstotzka_n.png");
+	background-size: cover;
+	display: block;
+	width: 136px;
+	height: 18px;
+	position: relative;
+	bottom: 6px;
+	left: 60px;
+}
+#arstotzkaS{
+	background-image: url("ppimg/region/arstotzka_s.png");
+	background-size: cover;
+	display: block;
+	width: 92px;
+	height: 172px;
+	position: relative;
+	top: 54px;
+	left: 62px;
+}
+#arstotzkaP{
+	background-image: url("ppimg/region/arstotzka_p.png");
+	background-size: cover;
+	display: block;
+	width: 60px;
+	height: 80px;
+	position: relative;
+	bottom: 172px;
+	left: 286px;
+}
+#arstotzkaC{
+	background-image: url("ppimg/region/arstotzka_c.png");
+	background-size: cover;
+	display: block;
+	width: 140px;
+	height: 52px;
+	position: relative;
+	bottom: 110px;
+	left: 286px;
+}
+
+
+#rulebook6impor{
+	width: 492px;
+	height: 320px;
+}
+#marcador5{
+	bottom: 424px;
+	left: 22px;
+}
+#imporN{
+	background-image: url("ppimg/region/impor_n.png");
+	background-size: cover;
+	display: block;
+	width: 136px;
+	height: 18px;
+	position: relative;
+	bottom: 6px;
+	left: 60px;
+}
+#imporS{
+	background-image: url("ppimg/region/impor_s.png");
+	background-size: cover;
+	display: block;
+	width: 84px;
+	height: 172px;
+	position: relative;
+	top: 54px;
+	left: 84px;
+}
+#imporP{
+	background-image: url("ppimg/region/impor_p.png");
+	background-size: cover;
+	display: block;
+	width: 60px;
+	height: 80px;
+	position: relative;
+	bottom: 172px;
+	left: 286px;
+}
+#imporC{
+	background-image: url("ppimg/region/impor_c.png");
+	background-size: cover;
+	display: block;
+	width: 140px;
+	height: 52px;
+	position: relative;
+	bottom: 110px;
+	left: 286px;
+}
+
+
+#rulebook7kolechia{
+	width: 492px;
+	height: 320px;
+}
+#marcador6{
+	bottom: 424px;
+	left: 22px;
+}
+#kolechiaN{
+	background-image: url("ppimg/region/kolechia_n.png");
+	background-size: cover;
+	display: block;
+	width: 136px;
+	height: 18px;
+	position: relative;
+	bottom: 6px;
+	left: 60px;
+}
+#kolechiaS{
+	background-image: url("ppimg/region/kolechia_s.png");
+	background-size: cover;
+	display: block;
+	width: 84px;
+	height: 172px;
+	position: relative;
+	top: 54px;
+	left: 84px;
+}
+#kolechiaP{
+	background-image: url("ppimg/region/kolechia_p.png");
+	background-size: cover;
+	display: block;
+	width: 60px;
+	height: 80px;
+	position: relative;
+	bottom: 172px;
+	left: 286px;
+}
+#kolechiaC{
+	background-image: url("ppimg/region/kolechia_c.png");
+	background-size: cover;
+	display: block;
+	width: 140px;
+	height: 52px;
+	position: relative;
+	bottom: 110px;
+	left: 286px;
+}
+
+
+#rulebook8obristan{
+	width: 492px;
+	height: 320px;
+}
+#marcador7{
+	bottom: 424px;
+	left: 22px;
+}
+#obristanN{
+	background-image: url("ppimg/region/obristan_n.png");
+	background-size: cover;
+	display: block;
+	width: 136px;
+	height: 18px;
+	position: relative;
+	bottom: 6px;
+	left: 60px;
+}
+#obristanS{
+	background-image: url("ppimg/region/obristan_s.png");
+	background-size: cover;
+	display: block;
+	width: 84px;
+	height: 172px;
+	position: relative;
+	top: 54px;
+	left: 84px;
+}
+#obristanP{
+	background-image: url("ppimg/region/obristan_p.png");
+	background-size: cover;
+	display: block;
+	width: 60px;
+	height: 80px;
+	position: relative;
+	bottom: 172px;
+	left: 286px;
+}
+#obristanC{
+	background-image: url("ppimg/region/obristan_c.png");
+	background-size: cover;
+	display: block;
+	width: 140px;
+	height: 52px;
+	position: relative;
+	bottom: 110px;
+	left: 286px;
+}
+
+
+#rulebook9republia{
+	width: 492px;
+	height: 320px;
+}
+#marcador8{
+	bottom: 424px;
+	left: 22px;
+}
+#republiaN{
+	background-image: url("ppimg/region/republia_n.png");
+	background-size: cover;
+	display: block;
+	width: 136px;
+	height: 18px;
+	position: relative;
+	bottom: 6px;
+	left: 60px;
+}
+#republiaS{
+	background-image: url("ppimg/region/republia_s.png");
+	background-size: cover;
+	display: block;
+	width: 84px;
+	height: 172px;
+	position: relative;
+	top: 54px;
+	left: 84px;
+}
+#republiaP{
+	background-image: url("ppimg/region/republia_p.png");
+	background-size: cover;
+	display: block;
+	width: 60px;
+	height: 80px;
+	position: relative;
+	bottom: 172px;
+	left: 286px;
+}
+#republiaC{
+	background-image: url("ppimg/region/republia_c.png");
+	background-size: cover;
+	display: block;
+	width: 140px;
+	height: 52px;
+	position: relative;
+	bottom: 110px;
+	left: 286px;
+}
+
+
+#rulebook10unitedfed{
+	width: 492px;
+	height: 320px;
+}
+#marcador9{
+	bottom: 424px;
+	left: 22px;
+}
+#unitedfedN{
+	background-image: url("ppimg/region/unitedfed_n.png");
+	background-size: cover;
+	display: block;
+	width: 136px;
+	height: 18px;
+	position: relative;
+	bottom: 6px;
+	left: 60px;
+}
+#unitedfedS{
+	background-image: url("ppimg/region/unitedfed_s.png");
+	background-size: cover;
+	display: block;
+	width: 84px;
+	height: 172px;
+	position: relative;
+	top: 54px;
+	left: 84px;
+}
+#unitedfedP{
+	background-image: url("ppimg/region/unitedfed_p.png");
+	background-size: cover;
+	display: block;
+	width: 60px;
+	height: 80px;
+	position: relative;
+	bottom: 172px;
+	left: 286px;
+}
+#unitedfedC{
+	background-image: url("ppimg/region/unitedfed_c.png");
+	background-size: cover;
+	display: block;
+	width: 140px;
+	height: 52px;
+	position: relative;
+	bottom: 110px;
+	left: 286px;
+}
+
+
+a#{
+	background: red;
+	opacity: 50%;
+}
+#rulebook11booth{
+	background-image: url("ppimg/rulebook/booth.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	cursor: pointer;
+
+	width: 492px;
+	height: 320px;
+}
+#marcador10{
+	bottom: 58px;
+	left: 22px;
+}
+#rulebook12last{
+	background-image: url("ppimg/rulebook/RulesInnerLast.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	cursor: pointer;
+
+	width: 492px;
+	height: 320px;
+}
+#marcador11{
+	bottom: 28px;
+	left: 22px;
+}
+#rulebook13docs{
+	background-image: url("ppimg/rulebook/docs.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	cursor: pointer;
+
+	width: 492px;
+	height: 320px;
+}
+#doc1{
+	background-image: url("ppimg/botones/doc1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	left: 276px;
+	bottom: 26px;
+	width: 138px;
+	height: 22px;
+}
+#doc2{
+	background-image: url("ppimg/botones/doc2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	left: 276px;
+	bottom: 18px;
+	width: 126px;
+	height: 22px;
+}
+#doc3{
+	background-image: url("ppimg/botones/doc3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	left: 276px;
+	bottom: 10px;
+	width: 94px;
+	height: 22px;
+}
+#doc4{
+	background-image: url("ppimg/botones/doc4.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	left: 276px;
+	bottom: 2px;
+	width: 136px;
+	height: 22px;
+}
+#doc5{
+	background-image: url("ppimg/botones/doc5.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	left: 276px;
+	top: 6px;
+	width: 138px;
+	height: 22px;
+}
+#doc6{
+	background-image: url("ppimg/botones/doc6.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	left: 276px;
+	top: 14px;
+	width: 118px;
+	height: 22px;
+}
+#rulebook14id{
+	background-image: url("ppimg/rulebook/id.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	cursor: pointer;
+
+	width: 492px;
+	height: 320px;
+}
+#rulebook15entry{
+	background-image: url("ppimg/rulebook/entry.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+
+	width: 492px;
+	height: 320px;
+}
+#sellos{
+	background-image: url("ppimg/rulebook/entrysello.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	width: 162px;
+	height: 70px;
+	left: 284px;
+	bottom: 20px;
+}
+#must{
+	background-image: url("ppimg/rulebook/RuleSealRequired.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	width: 166px;
+	height: 48px;
+	left: 286px;
+	top: 72px;
+}
+#distritos{
+	background-image: url("ppimg/rulebook/distritos.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	width: 92px;
+	height: 172px;
+	left: 296px;
+	bottom: 10px;
+}
