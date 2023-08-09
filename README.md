@@ -45,5 +45,4 @@ The project uses images stored in the `ppimg` folder:
 - `drag.js` adds drag event listeners to the ball element
 - `draggable.js` implements a draggable class
 - `rulebook.js` handles showing and hiding page elements
-
- * *Bonaventura Gonzalo*  - [Linkedin](https://www.linkedin.com/in/gonzalo-bonaventura) -  [GitHub](https://github.com/GonzaloBonaventura)
+* *Bonaventura Gonzalo*  - [Linkedin](https://www.linkedin.com/in/gonzalo-bonaventura) -  [GitHub](https://github.com/GonzaloBonaventura)
